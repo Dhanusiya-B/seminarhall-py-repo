@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST" action="{{ url_for('book') }}">
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label for="department">Your Department:</label>
+    <input type="text" name="department" required><br><br>
+
+    <label for="program">Program Name:</label>
+    <input type="text" name="program_name" required><br><br>
+
+    <label for="date">Date:</label>
+    <input type="date" name="date" required><br><br>
+
+    <label for="start_time">Start Time:</label>
+    <input type="time" name="start_time" required><br><br>
+
+    <label for="end_time">End Time:</label>
+    <input type="time" name="end_time" required><br><br>
+
+    <input type="submit" value="Book Now">
+</form>
+
+{% endblock %}
